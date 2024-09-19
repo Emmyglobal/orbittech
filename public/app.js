@@ -1,4 +1,32 @@
-// Function to dynamically navigate between pages
+// Handle form submission
+document.addEventListener("submit", function(event) {
+    event.preventDefault();  // Prevent default form submission
+
+    const form = event.target;
+    const formData = new FormData(form);  // Get form data
+
+    // Convert form data to an object
+    const formObject = Object.fromEntries(formData.entries());
+
+    // Send form data to backend
+    fetch('http://localhost:3000/api/signup', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formObject),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+        alert('Form submitted successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form.');
+    });
+
+    // Function to dynamically navigate between pages
 function navigate(page) {
     // Get the main content area
     const main = document.getElementById('app');
@@ -124,3 +152,4 @@ signup: `
 
 // Load the home page by default
 navigate('home');
+});
