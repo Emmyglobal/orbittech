@@ -1,0 +1,179 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #C0C0C0;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    min-height: 600px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #C0C0C0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Section Styling */
+section {
+    display: none;
+    text-align: center;
+}
+
+section.active {
+    display: block;
+}
+
+/* Home Section */
+.home h1 {
+    color: #007BFF;
+}
+
+.home p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cta-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Testimonial Section */
+.testimonials blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonials cite {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Plans Section */
+.plans .plan {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.plans .plan h3 {
+    color: #007BFF;
+}
+
+/* Features Section */
+.features {
+    background-color: #eaf4ff;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.features .feature {
+    padding: 20px;
+}
+
+.features h3 {
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+.signup {
+    text-align: center;
+    padding: 20px;
+    background-color: #C0C0C0;
+    color: #007BFF;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.signup-form label {
+    font-size: 1.1rem;
+}
+
+.signup-form input, .signup-form select, .signup-form textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+.signup-form textarea {
+    resize: vertical;
+}
+
+.signup-form .cta-btn {
+    background-color: #007BFF;
+    color: #C0C0C0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form .cta-btn:hover {
+    background-color: #0056b3;
+}
