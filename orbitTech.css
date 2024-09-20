@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: url('./images/hero.jpg')no-repeat fixed center ;
+    background-size: cover;
+    height: 100%;
+    width: 100vw;
+}
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 80vw;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+/* Features Section */
+.features {
+    background-color: #001F3F;
+    padding: 40px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.features .feature {
+    padding: 20px;
+    width: 30%;
+}
+.feature h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+/* Header Section */
+header  nav{
+    background-color: #001F3F;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    display: inline;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #C0C0C0;
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    min-height: 600px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #C0C0C0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Section Styling */
+section {
+    display: block;
+    text-align: center;
+}
+
+section.active {
+    display: block;
+}
+
+/* Home Section */
+.home h1 {
+    color: #ffffff;
+}
+
+.home p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cta-btn {   
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #001F3F;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #003F3F;
+}
+
+/* Testimonial Section */
+.testimonials blockquote {
+    font-style: italic;
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonials cite {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Plans Section */
+.plans .plan {
+    background-color: #001F3F;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.plans .plan h3 {
+    color: #ffffff;
+}
+
+/* sign-up */
+.signup {
+    text-align: center;
+    padding: 20px;
+    background-color: #C0C0C0;
+    color: #007BFF;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.signup-form label {
+    font-size: 1.1rem;
+}
+
+.signup-form input, .signup-form select, .signup-form textarea {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+}
+
+.signup-form textarea {
+    resize: vertical;
+}
+
+.signup-form .cta-btn {
+    background-color: #007BFF;
+    color: #C0C0C0;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form .cta-btn:hover {
+    background-color: #0056b3;
+}
