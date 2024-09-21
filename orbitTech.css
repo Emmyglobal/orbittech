@@ -5,7 +5,8 @@
 
 /* General Styles */
 body, html {
-
+    background: url('hero.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Arial', sans-serif;
     color: #fff;
     height: 100%; /* Ensure body and html take up full height */
@@ -246,10 +247,7 @@ footer .socials a {
     text-decoration: none;
     margin: 0 5px;
 }
-body{
-        background: url('../images/hero.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
+
 
 /* Media Query for Smaller Screens */
 @media screen and (max-width: 768px) {
