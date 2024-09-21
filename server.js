@@ -25,9 +25,10 @@ const User = mongoose.model('User', userSchema);
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));  // Support form-encoded bodies
 
-// Serve static files from the "public" directory
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve static files from the current directory (where server.js is located)
+app.use(express.static(__dirname));
 
 // Route to handle form submission
 app.post('/api/signup', async (req, res) => {
@@ -66,7 +67,7 @@ app.post('/api/signup', async (req, res) => {
 
 // Route to serve the payment page
 app.get('/payment.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'payment.html'));
+    res.sendFile(path.join(__dirname, 'payment.html'));
 });
 
 // Start the server
