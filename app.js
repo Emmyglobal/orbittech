@@ -1,6 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log('Script Loaded');
 
+    const hamburger = document.getElementById("hamburger-menu");
+    const navLinksContainer = document.querySelector('.nav-links'); // Select the parent container
+    const navLinks = document.querySelectorAll('.nav-links a'); // Get all nav links
+
+    // Handle clicking on nav links
+    navLinks.forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            const page = link.getAttribute('data-page');
+            console.log('Nav link clicked:', page);
+            navigate(page);
+
+            // Hide the menu after a link is clicked
+            navLinksContainer.classList.remove('show');
+        });
+    });
+
+    // Toggle the navigation menu when the hamburger icon is clicked
+    hamburger.addEventListener("click", function () {
+        navLinksContainer.classList.toggle("show"); // Apply toggle to the container
+    });
+
     // Function to handle form submission
     function handleFormSubmission(event) {
         event.preventDefault();
@@ -80,17 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Handle clicking on nav links
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            const page = link.getAttribute('data-page');
-            console.log('Nav link clicked:', page);
-            navigate(page);
-        });
-    });
-
     // Content for each section
     const pages = {
         home: `
@@ -116,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <button class="cta-btn" data-action="services">Explore Our Services</button>
                 <button class="cta-btn signup-btn" data-action="signup">Sign Up Now</button>
-                <p>Sign up already?</p><button><a href="">Fill the Form</a></button>
+                <p>Sign up already?</p><button><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Fill the Form</a></button>
             </div>
         </section>`,
         
@@ -125,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Sign Up for OrbitTech Bootcamp</h1>
             <p>Fill out the form below to secure your spot in our upcoming bootcamps.</p>
 
-            <form action="/api/signup" method="POST" class="signup-form" id="signup-form">
+            <form class="signup-form" id="signup-form">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
@@ -142,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <textarea id="message" name="message" rows="4"></textarea>
 
                 <button type="submit" class="cta-btn submit-btn">Submit</button>
-                <p>Sign up already?</p><button><a href="">Fill the Form</a></button>
+                <p>Sign up already?</p><button><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Fill the Form</a></button>
             </form>
         </section>`,
 
@@ -161,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h2>Join Us</h2>
             <p>Embark on your journey to becoming a frontend developer with OrbitTech. Our bootcamp not only prepares you with technical skills but also instills confidence and a growth mindset that is crucial for success in the tech industry.</p>
         </section>`,
-
+        
         services: `
         <section class="services">
             <h1>Our Services</h1>
