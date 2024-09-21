@@ -75,6 +75,24 @@ main {
     padding: 40px;
     min-height: 600px;
 }
+/* Features Section */
+.features {
+    background-color: #001F3F;
+    padding: 40px 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.features .feature {
+    padding: 20px;
+    width: 30%;
+}
+.feature h2 {
+    font-size: 1.5rem;
+    padding: 10px;
+}
 
 /* Footer Section */
 footer {
