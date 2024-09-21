@@ -95,23 +95,7 @@ main {
     padding: 10px;
 }
 
-/* Footer Section */
-footer {
-    background-color: #2e2929;
-    color: white;
-    text-align: center;
-    padding: 5px 0;
-}
 
-footer p {
-    font-size: 1rem;
-}
-
-footer .socials a {
-    color: white;
-    text-decoration: none;
-    margin: 0 5px;
-}
 
 /* Section Styling */
 
@@ -132,8 +116,6 @@ section {
 }
 
 /* Home Section */
-/* .home {
-    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
 
 /* Sign-Up Section */
 .signup {
@@ -269,6 +251,24 @@ section {
 }
 .services ul{
     padding: 5px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2e2929;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer .socials a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
 }
 /* Media Query for Smaller Screens */
 @media screen and (max-width: 768px) {
