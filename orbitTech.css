@@ -5,6 +5,8 @@
 
 /* General Styles */
 body, html {
+    background: url('../images/hero.jpg') no-repeat fixed center;
+    background-size: cover;
     font-family: 'Arial', sans-serif;
     color: #fff;
     height: 100%;
@@ -70,8 +72,7 @@ header nav {
 
 /* Main Content */
 main {
-    background: url('../images/hero.jpg') no-repeat fixed center;
-    background-size: cover;
+
     padding: 40px;
     min-height: 600px;
 }
