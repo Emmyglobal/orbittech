@@ -5,12 +5,12 @@
 
 /* General Styles */
 body, html {
-    background: url('../images/hero.jpg') no-repeat fixed center;
+    background: url('../images/hero.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
     color: #fff;
-    height: 100%;
-    width: 100vw;
+    height: 100%; /* Ensure body and html take up full height */
+    width: 100%; /* Use 100% instead of 100vw to account for scrollbar */
 }
 
 header nav {
@@ -69,13 +69,12 @@ header nav {
     transition: 0.4s;
 }
 
-
 /* Main Content */
 main {
-
     padding: 40px;
     min-height: 600px;
 }
+
 /* Features Section */
 .features {
     background-color: #001F3F;
@@ -90,18 +89,17 @@ main {
     padding: 20px;
     width: 30%;
 }
+
 .feature h2 {
     font-size: 1.5rem;
     padding: 10px;
 }
 
-
-
 /* Section Styling */
-
 section.active {
     display: block;
 }
+
 /* Centering all sections */
 section {
     display: flex;
@@ -122,28 +120,8 @@ section {
     background-color: rgba(192, 192, 192, 0.9); /* Semi-transparent light grey */
 }
 
-/* About Section */
-.about {
-    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
-}
-
-/* Services Section */
-.services {
-    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
-}
-
-/* Plans Section */
-.plans {
-    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
-}
-
-/* Testimonials Section */
-.testimonials {
-    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
-}
-
-/* Contact Section */
-.contact {
+/* About Section, Services Section, Plans Section, Testimonials Section, Contact Section */
+.about, .services, .plans, .testimonials, .contact {
     background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
 }
 
@@ -246,10 +224,9 @@ section {
 .signup-form .cta-btn:hover {
     background-color: #0056b3;
 }
-.services ul{
+
+.services ul {
     list-style: none;
-}
-.services ul{
     padding: 5px;
 }
 
@@ -270,6 +247,7 @@ footer .socials a {
     text-decoration: none;
     margin: 0 5px;
 }
+
 /* Media Query for Smaller Screens */
 @media screen and (max-width: 768px) {
     .nav-links {
@@ -292,9 +270,9 @@ footer .socials a {
     .hamburger {
         display: flex; /* Show hamburger on smaller screens */
     }
-        section {
+
+    section {
         padding: 20px;
         margin: 10px; /* Reduce margin on smaller screens */
     }
 }
-
