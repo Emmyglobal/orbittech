@@ -5,6 +5,7 @@
 
 /* General Styles */
 body, html {
+    background-color: #001F3F;
     background: url('hero.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
