@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Sign Up for OrbitTech Bootcamp</h1>
             <p>Fill out the form below to secure your spot in our upcoming bootcamps.</p>
 
-            <form class="signup-form" id="signup-form">
+            <form action="/api/signup" method="POST" class="signup-form" id="signup-form">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
 
