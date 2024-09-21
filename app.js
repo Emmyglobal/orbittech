@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <select id="course" name="course">
                     <option value="frontend">Frontend Development</option>
                     <option value="social-media">Social Media Marketing</option>
+                    <option value="graphics-design">Graphics Design</option>
                 </select>
 
                 <label for="message">Message (Optional):</label>
