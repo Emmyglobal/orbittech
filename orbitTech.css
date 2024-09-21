@@ -1,62 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* General Styles */
 body, html {
-    margin: 0;
-    padding: 0;
     font-family: 'Arial', sans-serif;
     color: #fff;
-    background: url('./images/hero.jpg')no-repeat fixed center ;
-    background-size: cover;
     height: 100%;
     width: 100vw;
 }
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
-    text-align: center;
-}
 
-.home-content {
-    max-width: 80vw;
-    margin: auto;
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-/* Features Section */
-.features {
-    background-color: #001F3F;
-    padding: 40px 20px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-.features .feature {
-    padding: 20px;
-    width: 30%;
-}
-.feature h2 {
-    font-size: 1.5rem;
-    padding: 10px;
-}
-
-/* Header Section */
-header  nav{
+header nav {
     background-color: #001F3F;
     color: white;
     padding: 10px 20px;
@@ -65,21 +20,26 @@ header  nav{
     align-items: center;
 }
 
+/* Logo styles */
 .logo h1 {
     font-size: 28px;
     font-weight: bold;
-    display: inline;
-}
-.logo img{
-    height: 50px;
-    width: 50px;
-    display: inline;
 }
 
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+/* Navigation Links */
 .nav-links {
     list-style-type: none;
     display: flex;
-    gap: 30px;
+    gap: 30px; /* Adjusted for larger screens */
+}
+
+.nav-links.show {
+    display: flex; /* Show on toggle */
 }
 
 .nav-links a {
@@ -92,24 +52,69 @@ header  nav{
     color: #C0C0C0;
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Media Query for Smaller Screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        top: 70px; /* Adjust this based on your header height */
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #001F3F;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none; /* Default to hidden */
+    }
+
+    .nav-links.show {
+        display: flex; /* Use flex to align items when shown */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on smaller screens */
+    }
+}
+
 /* Main Content */
 main {
+    background: url('./hero.jpg') no-repeat fixed center;
+    background-size: cover;
     padding: 40px;
     min-height: 600px;
 }
 
 /* Footer Section */
 footer {
-    background-color: #C0C0C0;
+    background-color: #2e2929;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 5px 0;
+}
+
+footer p {
+    font-size: 1rem;
 }
 
 footer .socials a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 /* Section Styling */
@@ -132,7 +137,8 @@ section.active {
     margin-top: 10px;
 }
 
-.cta-btn {   
+/* CTA Button */
+.cta-btn {
     padding: 10px 20px;
     font-size: 1.2rem;
     background-color: #001F3F;
@@ -174,7 +180,7 @@ section.active {
     color: #ffffff;
 }
 
-/* sign-up */
+/* Sign-Up Section */
 .signup {
     text-align: center;
     padding: 20px;
@@ -194,7 +200,9 @@ section.active {
     font-size: 1.1rem;
 }
 
-.signup-form input, .signup-form select, .signup-form textarea {
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
     width: 300px;
     padding: 10px;
     border: 1px solid #007BFF;
