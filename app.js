@@ -159,19 +159,33 @@ document.addEventListener("DOMContentLoaded", function () {
 
         about: `
         <section class="about">
-            <h1>About Us</h1>
-            <p>At OrbitTech, we believe that anyone can become a proficient frontend developer with the right guidance and resources. Our 3-month Bootcamp is meticulously designed to provide a comprehensive learning experience that equips participants with essential skills in web development.</p>
+            <div>
+                <h1>About Us</h1>
+                <p>At OrbitTech, we believe that anyone can become a proficient frontend developer with the right guidance and resources. Our 3-month Bootcamp is meticulously designed to provide a comprehensive learning experience that equips participants with essential skills in web development.</p>
+            </div>
+            <div>
             <h2>Our Mission</h2>
             <p>Our mission is to empower aspiring developers by offering high-quality education and practical training. We aim to bridge the gap between theoretical knowledge and real-world application, ensuring that our students are job-ready by the end of the program.</p>
+            </div>
+            <div>
             <h2>Our Approach</h2>
             <p>We prioritize hands-on learning through project-based experiences. Work on real-world projects that reinforce your understanding and contribute to your professional portfolio.</p>
+            </div>
+            <div>
             <p>Join a vibrant community of learners and industry professionals. Our bootcamp encourages collaboration and networking, allowing you to share ideas, seek help, and build lasting connections.</p>
             <p>Learn from experienced instructors who are passionate about teaching. Our team brings a wealth of knowledge and real-world experience, providing you with insights and mentorship throughout your journey.</p>
+            
+            </div>
+            <div>
             <h2>Career Opportunities</h2>
             <p>The demand for skilled frontend developers continues to rise. By completing our bootcamp, you will gain the skills necessary to pursue various career paths, including Frontend Developer, UI/UX Designer, Web Designer, and Web Application Developer. We also provide career guidance and support to help you navigate the job market and prepare for interviews.</p>
+            
+            </div>
+            <div>
             <h2>Join Us</h2>
             <p>Embark on your journey to becoming a frontend developer with OrbitTech. Our bootcamp not only prepares you with technical skills but also instills confidence and a growth mindset that is crucial for success in the tech industry.</p>
-        </section>`,
+            </div>
+            </section>`,
         
         services: `
         <section class="services">
@@ -192,15 +206,15 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Our Plans</h1>
             <div class="plan">
                 <h3>Basic Plan</h3>
-                <p>Access to foundational frontend courses. Price: $100</p>
+                <p>Access to foundational frontend courses. Price: &#8358;50000</p>
             </div>
             <div class="plan">
                 <h3>Pro Plan</h3>
-                <p>Full access to all bootcamps, including HTML, CSS, JavaScript, and more. Price: $300</p>
+                <p>Full access to all bootcamps, including HTML, CSS, JavaScript, and more. Price: &#8358;80000</p>
             </div>
             <div class="plan">
                 <h3>Premium Plan</h3>
-                <p>All Pro Plan features + 1-on-1 mentoring. Price: $500</p>
+                <p>All Pro Plan features + 1-on-1 mentoring. Price: &#8358;120000</p>
             </div>
             <div class="plan">
                 <h3>Enterprise Plan</h3>
@@ -208,11 +222,11 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <div class="plan">
                 <h3>Marketing Plan</h3>
-                <p>Comprehensive social media marketing strategies. Price: $400</p>
+                <p>Comprehensive social media marketing strategies. Price: &#8358;15000</p>
             </div>
             <div class="plan">
                 <h3>Design Plan</h3>
-                <p>Professional graphics design services for branding. Price: $300</p>
+                <p>Professional graphics design services for branding. Price: &#8358;20000</p>
             </div>
         </section>`,
 
@@ -221,19 +235,19 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Testimonials</h1>
             <blockquote>
                 "OrbitTech helped me transition from a beginner to a confident frontend developer. The instructors were fantastic!" 
-                <cite>- Jane Doe, OrbitTech Graduate</cite>
+                <cite>- Nwafor Ugochukwu, OrbitTech Graduate</cite>
             </blockquote>
             <blockquote>
                 "Their bootcamp was the best investment I've made. I landed a junior developer role right after graduation." 
-                <cite>- John Smith, OrbitTech Alumni</cite>
+                <cite>- Onomade Elvera, OrbitTech Alumni</cite>
             </blockquote>
             <blockquote>
                 "The hands-on projects and expert feedback were invaluable in helping me build my portfolio." 
-                <cite>- Sarah Lee, OrbitTech Graduate</cite>
+                <cite>- Aiyegba Emmanuel, OrbitTech Graduate</cite>
             </blockquote>
             <blockquote>
                 "The community at OrbitTech is incredibly supportive, making learning enjoyable and productive." 
-                <cite>- Mark Robinson, OrbitTech Alumni</cite>
+                <cite>- Chilaka Oluebube, OrbitTech Alumni</cite>
             </blockquote>
         </section>`,
 
@@ -241,7 +255,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <section class="contact">
             <h1>Contact Us</h1>
             <p>Email: nwaforugochukwu21@gmail.com</p>
-            <p>Phone: +234 123 456 789</p>
+            <p>Phone: +234 902 324 1785</p>
         </section>`
     };
 
