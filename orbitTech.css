@@ -157,7 +157,7 @@ section {
     margin: 20px auto;
     max-width: 600px;
     font-size: 18px;
-    color: #333;
+    color: #9c9b9b;
 }
 
 .testimonials cite {
@@ -226,8 +226,13 @@ section {
 }
 
 .services ul {
+    padding: 10px;
     list-style: none;
+}
+.services ul li {
+    text-align: justify;
     padding: 5px;
+    list-style: none;
 }
 
 /* Footer Section */
@@ -278,15 +283,42 @@ footer .socials a {
     }
     /* Features Section */
 .features {
-    padding: 20px 20px;
-    margin-top: 20px;
+    padding: 5px;
     display: flex;
+    gap: 10px;
     flex-direction: column;
-    margin-bottom: 5px;
+    justify-content: center;
+    align-content: center;
 }
 
 .features .feature {
-    padding: 10px;
-    width: 50%;
+    align-self: center;
+    background: #032b55;
+    border-radius: 15px;
+    width: 80%;
 }
+
+.feature h2 {
+    font-size: 1.5rem;
+    padding: 6px;
+}
+.about{
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.about div{
+    align-self: center;
+    background: #032b55;
+    border-radius: 15px;
+    width: 80%;
+}
+.about h2 {
+        font-size: 1.5rem;
+        padding: 6px;
+    }
+
 }
