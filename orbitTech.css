@@ -113,13 +113,56 @@ footer .socials a {
 }
 
 /* Section Styling */
-section {
-    display: block;
-    text-align: center;
-}
 
 section.active {
     display: block;
+}
+/* Centering all sections */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    margin: 20px auto; /* Center sections with margin */
+    max-width: 800px; /* Set a max-width for sections */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Home Section */
+.home {
+    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
+}
+
+/* Sign-Up Section */
+.signup {
+    background-color: rgba(192, 192, 192, 0.9); /* Semi-transparent light grey */
+}
+
+/* About Section */
+.about {
+    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
+}
+
+/* Services Section */
+.services {
+    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
+}
+
+/* Plans Section */
+.plans {
+    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
+}
+
+/* Contact Section */
+.contact {
+    background-color: rgba(0, 31, 63, 0.8); /* Semi-transparent dark blue */
 }
 
 /* Home Section */
@@ -248,6 +291,10 @@ section.active {
 
     .hamburger {
         display: flex; /* Show hamburger on smaller screens */
+    }
+        section {
+        padding: 20px;
+        margin: 10px; /* Reduce margin on smaller screens */
     }
 }
 
