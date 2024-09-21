@@ -252,6 +252,9 @@ section {
     text-align: justify;
     padding: 5px;
     list-style: none;
+    padding: 17px 0 17px 70px; 
+    background: url(tick.png) no-repeat left 
+center; 
 }
 
 /* Footer Section */
