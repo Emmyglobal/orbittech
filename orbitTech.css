@@ -342,5 +342,13 @@ footer .socials a {
         font-size: 1.5rem;
         padding: 6px;
     }
+}
+@media (max-width:450px){
+    .signup-form input,
+    .signup-form select,
+    .signup-form textarea {
+        width: 200px;
+        padding: 5px;
+    }
 
 }
