@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Fill out the form below to secure your spot in our upcoming bootcamps.</p>
 
             <form class="signup-form" id="signup-form">
-                <label for="name">Full Name:</label>
+                <label for="name">Full Names:</label>
                 <input type="text" id="name" name="name" required>
 
                 <label for="email">Email:</label>
@@ -145,9 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <label for="course">Select Course:</label>
                 <select id="course" name="course">
-                    <option value="frontend">Frontend Development</option>
-                    <option value="social-media">Social Media Marketing</option>
-                    <option value="graphics-design">Graphics Design</option>
+                    <option value="frontend">Frontend Development - Price: &#8358;60,000</option>
+                    <option value="social-media">Meta Advertising Course (Facebook, Instagram and Whatsapp) - Price: &#8358;20,000</option>
+                    <option value="graphics-design">Graphics Design using Phone - Price: &#8358;10,000</option>
                 </select>
 
                 <label for="message">Message (Optional):</label>
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Our Services</h1>
             <ul>
                 <li>3-Month Frontend Bootcamp: Master HTML, CSS, and JavaScript.</li>
-                <li>Social Media Marketing (Facebook and Instagram): Elevate your brand's digital presence.</li>
+                <li>Meta Advertising Course (Facebook, Instagram and Whatsapp) Pro Level: Elevate your brand's digital presence.</li>
                 <li>Graphics Design: Create stunning visuals for your business needs.</li>
                 <li>Web Design & Development: Tailored solutions for your business.</li>
                 <li>One-on-One Mentorship: Personalized guidance to help you excel.</li>
@@ -204,30 +204,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
         plans: `
         <section class="plans">
-            <h1>Our Plans</h1>
+            <h1>Our Prices</h1>
             <div class="plan">
-                <h3>Basic Plan</h3>
-                <p>Access to foundational frontend courses. Price: &#8358;50000</p>
+                <h3>Frontend Development Bootcamp for individuals</h3>
+                <h4>Duration: 3 months</h4>
+                <p>Access to foundational frontend courses,including HTML, CSS, JavaScript. Price: &#8358;60,000</p>
             </div>
             <div class="plan">
-                <h3>Pro Plan</h3>
-                <p>Full access to all bootcamps, including HTML, CSS, JavaScript, and more. Price: &#8358;80000</p>
+                <h3>Frontend Development Bootcamp for Organizations</h3>
+                <h4>Duration: 3 months</h4>
+                <p>Full access to all bootcamps, including HTML, CSS, JavaScript, and more. Price: &#8358;80,000</p>
             </div>
             <div class="plan">
-                <h3>Premium Plan</h3>
-                <p>All Pro Plan features + 1-on-1 mentoring. Price: &#8358;120000</p>
+                <h3>Meta Advertising Course (Facebook, Instagram and Whatsapp) Pro Level</h3>
+                <h4>Duration: 2 weeks</h4>
+                <p>All features + 1-on-1 mentoring. Price: &#8358;20,000</p>
             </div>
             <div class="plan">
-                <h3>Enterprise Plan</h3>
-                <p>Customized training programs for organizations. Contact us for pricing.</p>
+                <h3>Meta Advertising course</h3>
+                <h4>Duration: 2 weeks</h4>
+                <p>Comprehensive social media marketing strategies. Price: &#8358;15,000</p>
             </div>
             <div class="plan">
-                <h3>Marketing Plan</h3>
-                <p>Comprehensive social media marketing strategies. Price: &#8358;15000</p>
-            </div>
-            <div class="plan">
-                <h3>Design Plan</h3>
-                <p>Professional graphics design services for branding. Price: &#8358;20000</p>
+                <h3>Graphic design Using Mobile Phone</h3>
+                <h4>Duration: 3 weeks</h4>
+                <p>Professional graphics design services for branding. Price: &#8358;10,000</p>
             </div>
         </section>`,
 
@@ -236,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Testimonials</h1>
             <blockquote>
                 "OrbitTech helped me transition from a beginner to a confident frontend developer. The instructors were fantastic!" 
-                <cite>- Nwafor Ugochukwu, OrbitTech Graduate</cite>
+                <cite>- Aiyegba Louis, OrbitTech Graduate</cite>
             </blockquote>
             <blockquote>
                 "Their bootcamp was the best investment I've made. I landed a junior developer role right after graduation." 
@@ -253,11 +254,20 @@ document.addEventListener("DOMContentLoaded", function () {
         </section>`,
 
         contact: `
-        <section class="contact">
-            <h1>Contact Us</h1>
-            <p>Email: nwaforugochukwu21@gmail.com</p>
-            <p>Phone: +234 902 324 1785</p>
-        </section>`
+<section class="contact">
+    <h1>Contact Us</h1>
+    <p>Email: careers@orbitech.com </p>
+    <p>Phone: +234 902 324 1785<br> WhatsApp: +234 902 324 1785 </p>
+    <div class="footer-content">
+        <p>© 2024 OrbitTech. All Rights Reserved.</p>
+        <div class="socials">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">Instagram</a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">Twitter</a>
+        </div>
+    </div>
+</section>
+`
     };
 
     // Load the home page by default
