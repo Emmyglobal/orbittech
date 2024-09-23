@@ -280,7 +280,7 @@ footer .socials a {
 @media screen and (max-width: 768px) {
     .nav-links {
         position: absolute;
-        top: 70px; /* Adjust this based on your header height */
+        top: 60px;
         right: 0;
         height: 100vh;
         width: 100%;
@@ -351,4 +351,55 @@ footer .socials a {
         padding: 5px;
     }
 
+}
+
+/* General styling for the contact section */
+.contact {
+    text-align: center;  /* Center aligns text */
+    padding: 20px;
+    background-color: #f9f9f9;  /* Light background for contrast */
+    margin-top: 50px;
+}
+
+.contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.2em;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Styling the footer content */
+.footer-content {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #777;
+}
+
+/* Align social media links horizontally and add spacing */
+.socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    color: #0056b3;  /* Change color on hover */
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+    .contact {
+        padding: 10px;
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+    }
 }
