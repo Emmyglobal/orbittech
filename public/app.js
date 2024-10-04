@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
 
                 <button class="cta-btn" data-action="services">Explore Our Services</button>
-                <p>Sign up already?</p><button class="cta-btn signup-btn" data-action="signup"><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Fill the Form</a></button>
+                <p>Sign up already?</p><button class="cta-btn signup-btn" data-action="signup"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd-GVXHThjhRIHpzJRSfqU0tHpMxz8zY6By3C1847j5-Hld-Q/viewform">Fill the Form</a></button>
                 <button class="cta-btn signup-btn" data-action="signup">Sign Up Now</button>
             </div>
         </section>`,
@@ -99,7 +99,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <textarea id="message" name="message" rows="4"></textarea>
 
                 <button type="submit" class="cta-btn submit-btn">+</button>
-                <p>Sign up already?</p><button class="cta-btn signup-btn" data-action="signup"><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Submit</a></button>
+                <p>Sign up already?</p>
+                <button class="cta-btn signup-btn" data-action="signup"><a href="https://docs.google.com/forms/d/e/1FAIpQLSd-GVXHThjhRIHpzJRSfqU0tHpMxz8zY6By3C1847j5-Hld-Q/viewform">Submit</a></button>
             </form>
         </section>`,
 
