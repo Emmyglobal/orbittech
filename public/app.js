@@ -22,44 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener("click", function () {
         navLinksContainer.classList.toggle("show"); // Apply toggle to the container
     });
-
-    // Function to handle form submission
-    function handleFormSubmission(event) {
-        event.preventDefault();
-        console.log('Form Submitted');
-
-        const form = event.target;
-        const formData = new FormData(form);
-
-        // Convert form data to an object
-        const formObject = Object.fromEntries(formData.entries());
-        console.log('Form Data:', formObject);
-
-        // Send form data to backend
-        fetch('/api/signup', {  // Use relative URL
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formObject),
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                alert(data.message);
-
-                // Store user data in local storage and redirect to payment page
-                if (data.userData) {
-                    localStorage.setItem('userData', JSON.stringify(data.userData));
-                }
-                window.location.href = '/payment.html';  // Redirect to payment page
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error submitting the form.');
-            });
-    }
-
     // Function to handle dynamic navigation
     function navigate(page) {
         console.log('Navigating to:', page);
@@ -75,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     console.log('Form found. Attaching submit listener.');
                     form.addEventListener("submit", handleFormSubmission);
                 } else {
-                    console.error('Form not found on signup page.');
+                    alert.error('Form not found on signup page.');
                 }
             }
 
@@ -85,23 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error('Page not found:', page);
         }
     }
-
-    // Attach event listeners for buttons dynamically
-    function attachButtonListeners() {
-        const exploreServicesButton = document.querySelector('.cta-btn[data-action="services"]');
-        const signupButton = document.querySelector('.cta-btn[data-action="signup"]');
-
-        if (exploreServicesButton) {
-            console.log('Attaching event listener to Explore Services button');
-            exploreServicesButton.addEventListener('click', () => navigate('services'));
-        }
-
-        if (signupButton) {
-            console.log('Attaching event listener to Sign Up Now button');
-            signupButton.addEventListener('click', () => navigate('signup'));
-        }
-    }
-
     // Content for each section
     const pages = {
         home: `
