@@ -126,8 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
 
                 <button class="cta-btn" data-action="services">Explore Our Services</button>
+                <p>Sign up already?</p><button class="cta-btn signup-btn" data-action="signup"><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Fill the Form</a></button>
                 <button class="cta-btn signup-btn" data-action="signup">Sign Up Now</button>
-                <p>Sign up already?</p><button><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Fill the Form</a></button>
             </div>
         </section>`,
         
@@ -153,8 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <label for="message">Message (Optional):</label>
                 <textarea id="message" name="message" rows="4"></textarea>
 
-                <button type="submit" class="cta-btn submit-btn">Submit</button>
-                <p>Sign up already?</p><button><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Fill the Form</a></button>
+                <button type="submit" class="cta-btn submit-btn">+</button>
+                <p>Sign up already?</p><button class="cta-btn signup-btn" data-action="signup"><a href="https://docs.google.com/forms/d/1lbqQKSv__hgzVEHL560qq6ISemULN-IQ7LvU8yDi2yY/edit">Submit</a></button>
             </form>
         </section>`,
 
