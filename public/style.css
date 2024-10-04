@@ -34,6 +34,9 @@ header {
     text-decoration: none;
     font-weight: bold;
 }
+a{
+    text-decoration: none;
+}
 
 .nav-links a:hover {
     color: #C0C0C0;
